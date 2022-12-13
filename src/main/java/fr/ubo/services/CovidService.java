@@ -36,7 +36,7 @@ public class CovidService {
 
         }
         if(pays=="" || result == null || result.isEmpty())
-            logger.info("pays vide ou inexistant");
+            logger.info("Vérifier le pays que vous avez saisi");
         if (result != null && !result.isEmpty())
             logger.info("result found");
         return result;
@@ -83,7 +83,7 @@ public class CovidService {
                 throw new RuntimeException(e);
             }
         } else {
-            logger.info("date invalid");
+            logger.info("vérifier la date renseignée");
             return resultDate;
         }
     }
